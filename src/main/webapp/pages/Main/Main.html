@@ -1,0 +1,55 @@
+<wm-page name="mainpage" pagetitle="Main">
+    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-content name="content">
+        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-layoutgrid name="layoutgrid1" columns="3">
+                <wm-gridrow name="gridrow4">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn8">
+                        <wm-composite name="composite1">
+                            <wm-label class="col-md-3 control-label" name="urlpath" id="urlpath" caption="Enter Url Path"></wm-label>
+                            <wm-container class="col-md-9" name="container1">
+                                <wm-text name="text1" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath2" caption="Enter Url:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text2" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow3_1">
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn4"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow3">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6">
+                        <wm-button class="btn-default" caption="CLICK_HERE_FOR_XHTML_PDF_CONVERSION" type="button" margin="unset 0.5em" name="button1" on-click="Variables.serviceVariable1.invoke()"></wm-button>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn7"></wm-gridcolumn>
+                </wm-gridrow><br>
+                <wm-gridrow name="gridrow4_1">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn5">
+                        <wm-button class="btn-default" caption="click_here_for_file_download" type="button" margin="unset 0.5em" name="button2" on-click="Widgets.listFilesTable2.refreshData()"></wm-button>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6_1"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid><br><br>
+            <wm-fileupload name="fileupload1" on-select="Variables.FileServiceUploadFile.invoke()"></wm-fileupload>
+            <wm-table name="listFilesTable2" title="" dataset="bind:Variables.FileServiceListFiles1.dataSet" navigation="Basic">
+                <wm-table-column binding="size" caption="Size" edit-widget-type="number" type="long" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="inlinePath" caption="Inline Path" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
+                <!-- <wm-table-column binding="path" caption="Path" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>-->
+                <wm-table-column binding="type" caption="Type" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="name" caption="Name" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
+                <wm-table-column binding="customField" caption="Download" widget-type="button" edit-widget-type="text" type="string" mobiledisplay="false" searchable="false" show="true" readonly="false">
+                    <wm-button caption="bind:row.getProperty('customField') || 'Download'" show="true" class="btn-sm btn-primary" iconclass="" on-click="Variables.stTemp.invoke()" conditionalclass=""></wm-button>
+                </wm-table-column>
+            </wm-table>
+        </wm-page-content>
+        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
+    </wm-content>
+    <wm-footer name="footer" content="footer"></wm-footer>
+</wm-page>

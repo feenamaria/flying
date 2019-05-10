@@ -1,0 +1,7 @@
+{
+  "id" : "FileService",
+  "type" : "JavaService",
+  "packageNames" : [ "com.testing_pdf.fileservice" ],
+  "serviceClassNames" : [ "com.testing_pdf.fileservice.FileService" ],
+  "title" : "FileService"
+}

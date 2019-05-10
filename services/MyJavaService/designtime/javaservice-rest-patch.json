@@ -1,0 +1,87 @@
+{
+  "description" : null,
+  "methods" : {
+    "convert" : [ {
+      "url" : {
+        "value" : "/convert",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "urlpath_fromxml" : {
+          "name" : {
+            "value" : "urlpath_fromxml",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml1" : {
+          "name" : {
+            "value" : "urlpath_fromxml1",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ],
+    "sampleJavaOperation" : [ {
+      "url" : {
+        "value" : "/sampleJavaOperation",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "name" : {
+          "name" : {
+            "value" : "name",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "request" : {
+          "name" : {
+            "value" : "request",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "NONE",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ]
+  }
+}

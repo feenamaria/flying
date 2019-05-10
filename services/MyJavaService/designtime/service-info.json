@@ -1,0 +1,7 @@
+{
+  "id" : "MyJavaService",
+  "type" : "JavaService",
+  "packageNames" : [ "com.testing_pdf.myjavaservice" ],
+  "serviceClassNames" : [ "com.testing_pdf.myjavaservice.MyJavaService" ],
+  "title" : "MyJavaService"
+}
