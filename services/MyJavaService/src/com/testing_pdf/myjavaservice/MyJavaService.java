@@ -65,6 +65,7 @@ public class MyJavaService {
            "<img src=\""+urlpath_fromxml10+"\"/> \n" +
            "</body>\n" +
            "</html>\n";
+           // "<img src=\""+urlpath_fromxml+"\""+"width=\""+100%"\""+"height=\""+100%"\"/> \n" +
 		
         String path =System.getProperty("user.home") + "/WaveMaker/appdata/testing_pdf/uploads/"+"sample.xhtml";
         FileOutputStream out = new FileOutputStream(path);
@@ -82,5 +83,6 @@ public class MyJavaService {
         return null;
     }
     
-
+//http://pkbhqh8c1f23.cloud.wavemakeronline.com/flying/#/Main
+//The reference to entity "usqp" must end with the ';' delimiter.
 }
