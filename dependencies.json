@@ -3,4 +3,9 @@
   "version" : "3.9",
   "artifactType" : "THEME",
   "artifactDependencyList" : null
+}, {
+  "name" : "QRCode",
+  "version" : "1.5",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
 } ]

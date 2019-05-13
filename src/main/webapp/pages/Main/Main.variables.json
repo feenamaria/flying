@@ -149,6 +149,28 @@
     "saveInPhonegap" : false,
     "controller" : "File"
   },
+  "listfiles222" : {
+    "_id" : "wm-listfiles222-wm.ServiceVariable-1557468713940",
+    "name" : "listfiles222",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.testing_pdf.fileservice.FileService.WMFile",
+    "service" : "FileService",
+    "operation" : "listFiles",
+    "operationId" : "FileController_listFiles",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "File"
+  },
   "serviceVariable1" : {
     "_id" : "wm-serviceVariable1-wm.ServiceVariable-1557307599688",
     "name" : "serviceVariable1",
@@ -161,6 +183,38 @@
     }, {
       "target" : "urlpath_fromxml1",
       "value" : "bind:Widgets.text2.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml3",
+      "value" : "bind:Widgets.text3.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml4",
+      "value" : "bind:Widgets.text4.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml5",
+      "value" : "bind:Widgets.text5.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml6",
+      "value" : "bind:Widgets.text6.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml7",
+      "value" : "bind:Widgets.text7.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml8",
+      "value" : "bind:Widgets.text8.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml9",
+      "value" : "bind:Widgets.text9.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "urlpath_fromxml10",
+      "value" : "bind:Widgets.text10.datavalue",
       "type" : "string"
     } ],
     "type" : "string",
@@ -178,6 +232,28 @@
     "transformationRequired" : false,
     "saveInPhonegap" : false,
     "controller" : "MyJava"
+  },
+  "serviceVariable2" : {
+    "_id" : "wm-serviceVariable2-wm.ServiceVariable-1557468908662",
+    "name" : "serviceVariable2",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.wavemaker.runtime.file.model.DownloadResponse",
+    "service" : "FileService",
+    "operation" : "getDownloadFile",
+    "operationId" : "FileController_getDownloadFile",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "File"
   },
   "stTemp" : {
     "_id" : "wm-stTemp-wm.ServiceVariable-1557404118936",

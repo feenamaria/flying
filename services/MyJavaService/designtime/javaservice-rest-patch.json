@@ -39,6 +39,118 @@
             "value" : false,
             "modified" : false
           }
+        },
+        "urlpath_fromxml3" : {
+          "name" : {
+            "value" : "urlpath_fromxml3",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml4" : {
+          "name" : {
+            "value" : "urlpath_fromxml4",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml5" : {
+          "name" : {
+            "value" : "urlpath_fromxml5",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml6" : {
+          "name" : {
+            "value" : "urlpath_fromxml6",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml7" : {
+          "name" : {
+            "value" : "urlpath_fromxml7",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml8" : {
+          "name" : {
+            "value" : "urlpath_fromxml8",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml9" : {
+          "name" : {
+            "value" : "urlpath_fromxml9",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "urlpath_fromxml10" : {
+          "name" : {
+            "value" : "urlpath_fromxml10",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
         }
       }
     } ],

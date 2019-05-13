@@ -45,7 +45,7 @@ public class MyJavaService {
     }
     
     
-    public String convert(String urlpath_fromxml,String urlpath_fromxml1) throws Exception
+    public String convert(String urlpath_fromxml,String urlpath_fromxml1,String urlpath_fromxml3,String urlpath_fromxml4,String urlpath_fromxml5,String urlpath_fromxml6,String urlpath_fromxml7,String urlpath_fromxml8,String urlpath_fromxml9,String urlpath_fromxml10) throws Exception
     {
         
         String urlpath="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg";
@@ -53,19 +53,26 @@ public class MyJavaService {
            "<html>\n" +
            "<head><style> h2 { page-break-before: always;}</style></head>" +
            "<body>\n" +
-           "<img src=\""+urlpath+"\"/> \n" +
            "<img src=\""+urlpath_fromxml+"\"/> \n" +
            "<img src=\""+urlpath_fromxml1+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml3+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml4+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml5+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml6+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml7+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml8+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml9+"\"/> \n" +
+           "<img src=\""+urlpath_fromxml10+"\"/> \n" +
            "</body>\n" +
            "</html>\n";
 		
-        String path =System.getProperty("user.home") + "/WaveMaker/appdata/testing_pdf/uploads/"+"new.xhtml";
+        String path =System.getProperty("user.home") + "/WaveMaker/appdata/testing_pdf/uploads/"+"sample.xhtml";
         FileOutputStream out = new FileOutputStream(path);
         out.write(data.getBytes());
         out.close();
-        String inputFile = System.getProperty("user.home") + "/WaveMaker/appdata/testing_pdf/uploads/"+"new.xhtml"; 
+        String inputFile = System.getProperty("user.home") + "/WaveMaker/appdata/testing_pdf/uploads/"+"sample.xhtml"; 
         String url = new File(inputFile).toURI().toURL().toString(); 
-        String outputFile =  System.getProperty("user.home") + "/WaveMaker/appdata/testing_pdf/uploads/"+"new.pdf"; 
+        String outputFile =  System.getProperty("user.home") + "/WaveMaker/appdata/testing_pdf/uploads/"+"sample.pdf"; 
         OutputStream os = new FileOutputStream(outputFile); 
         ITextRenderer renderer = new ITextRenderer(); 
         renderer.setDocument(url);  
@@ -77,5 +84,3 @@ public class MyJavaService {
     
 
 }
-
-//  "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg\"/> \n" +

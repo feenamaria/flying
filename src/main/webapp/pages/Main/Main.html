@@ -14,9 +14,57 @@
                             </wm-container>
                         </wm-composite>
                         <wm-composite name="composite2">
-                            <wm-label class="col-md-3 control-label" name="urlpath2" caption="Enter Url:"></wm-label>
+                            <wm-label class="col-md-3 control-label" name="urlpath2" caption="Enter 2nd Url Path:"></wm-label>
                             <wm-container class="col-md-9" name="container2">
                                 <wm-text name="text2" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath3" caption="Enter 3rd Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text3" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath4" caption="Enter 4th Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text4" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath5" caption="Enter 5th Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text5" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath6" caption="Enter 6th Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text6" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath7" caption="Enter 7th Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text7" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath8" caption="Enter 8th Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text8" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath9" caption="Enter 9th Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text9" type="url" placeholder="Enter image url"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                        <wm-composite name="composite2">
+                            <wm-label class="col-md-3 control-label" name="urlpath10" caption="Enter 10th Url Path:"></wm-label>
+                            <wm-container class="col-md-9" name="container2">
+                                <wm-text name="text10" type="url" placeholder="Enter image url"></wm-text>
                             </wm-container>
                         </wm-composite>
                     </wm-gridcolumn>
@@ -25,31 +73,33 @@
                     <wm-gridcolumn columnwidth="4" name="gridcolumn4"></wm-gridcolumn>
                 </wm-gridrow>
                 <wm-gridrow name="gridrow3">
-                    <wm-gridcolumn columnwidth="6" name="gridcolumn6">
+                    <!--   <wm-gridcolumn columnwidth="6" name="gridcolumn6">
                         <wm-button class="btn-default" caption="CLICK_HERE_FOR_XHTML_PDF_CONVERSION" type="button" margin="unset 0.5em" name="button1" on-click="Variables.serviceVariable1.invoke()"></wm-button>
                     </wm-gridcolumn>
                     <wm-gridcolumn columnwidth="6" name="gridcolumn7"></wm-gridcolumn>
                 </wm-gridrow><br>
                 <wm-gridrow name="gridrow4_1">
                     <wm-gridcolumn columnwidth="6" name="gridcolumn5">
-                        <wm-button class="btn-default" caption="click_here_for_file_download" type="button" margin="unset 0.5em" name="button2" on-click="Widgets.listFilesTable2.refreshData()"></wm-button>
-                    </wm-gridcolumn>
+                        <wm-button class="btn-default" caption="click_here_for_file_download" type="button" margin="unset 0.5em" name="button2" on-click="Variables.FileServiceListFiles1.invoke()"></wm-button>
+                    </wm-gridcolumn>-->
                     <wm-gridcolumn columnwidth="6" name="gridcolumn6_1"></wm-gridcolumn>
                 </wm-gridrow>
             </wm-layoutgrid><br><br>
-            <wm-fileupload name="fileupload1" on-select="Variables.FileServiceUploadFile.invoke()"></wm-fileupload>
-            <wm-table name="listFilesTable2" title="" dataset="bind:Variables.FileServiceListFiles1.dataSet" navigation="Basic">
+            <!--  <wm-table name="listFilesTable2" title="" dataset="bind:Variables.FileServiceListFiles1.dataSet" navigation="Basic">
                 <wm-table-column binding="size" caption="Size" edit-widget-type="number" type="long" show="true" readonly="false"></wm-table-column>
                 <wm-table-column binding="inlinePath" caption="Inline Path" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
-                <!-- <wm-table-column binding="path" caption="Path" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>-->
+                <wm-table-column binding="path" caption="Path" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
                 <wm-table-column binding="type" caption="Type" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
                 <wm-table-column binding="name" caption="Name" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column>
                 <wm-table-column binding="customField" caption="Download" widget-type="button" edit-widget-type="text" type="string" mobiledisplay="false" searchable="false" show="true" readonly="false">
                     <wm-button caption="bind:row.getProperty('customField') || 'Download'" show="true" class="btn-sm btn-primary" iconclass="" on-click="Variables.stTemp.invoke()" conditionalclass=""></wm-button>
                 </wm-table-column>
-            </wm-table>
+            </wm-table>-->
+            <!--  <wm-iframe name="iframe1" iframesrc="https://www.wavemakeronline.com/run-fgw6p1bjdl/flying_master/services/file/downloadFileAsInline?file=sample.pdf&amp;returnName=sample.pdf"></wm-iframe><br>-->
+            <wm-button class="btn-default" caption="OPEN PDF" type="button" margin="unset 0.5em" name="button3" on-click="Variables.serviceVariable1.invoke();Widgets.iframedialog1.open()"></wm-button>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
     <wm-footer name="footer" content="footer"></wm-footer>
+    <wm-iframedialog name="iframedialog1" title="PDF CONTENT" url="https://www.wavemakeronline.com/run-fgw6p1bjdl/flying_master/services/file/downloadFileAsInline?file=sample.pdf"></wm-iframedialog>
 </wm-page>

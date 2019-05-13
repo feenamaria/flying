@@ -32,8 +32,8 @@ public class MyJavaController {
 
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @RequestMapping(value = "/convert", method = RequestMethod.GET)
-    public String convert(@RequestParam(value = "urlpath_fromxml", required = false) String urlpath_fromxml, @RequestParam(value = "urlpath_fromxml1", required = false) String urlpath_fromxml1) throws Exception {
-        return myJavaService.convert(urlpath_fromxml, urlpath_fromxml1);
+    public String convert(@RequestParam(value = "urlpath_fromxml", required = false) String urlpath_fromxml, @RequestParam(value = "urlpath_fromxml1", required = false) String urlpath_fromxml1, @RequestParam(value = "urlpath_fromxml3", required = false) String urlpath_fromxml3, @RequestParam(value = "urlpath_fromxml4", required = false) String urlpath_fromxml4, @RequestParam(value = "urlpath_fromxml5", required = false) String urlpath_fromxml5, @RequestParam(value = "urlpath_fromxml6", required = false) String urlpath_fromxml6, @RequestParam(value = "urlpath_fromxml7", required = false) String urlpath_fromxml7, @RequestParam(value = "urlpath_fromxml8", required = false) String urlpath_fromxml8, @RequestParam(value = "urlpath_fromxml9", required = false) String urlpath_fromxml9, @RequestParam(value = "urlpath_fromxml10", required = false) String urlpath_fromxml10) throws Exception {
+        return myJavaService.convert(urlpath_fromxml, urlpath_fromxml1, urlpath_fromxml3, urlpath_fromxml4, urlpath_fromxml5, urlpath_fromxml6, urlpath_fromxml7, urlpath_fromxml8, urlpath_fromxml9, urlpath_fromxml10);
     }
 
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
